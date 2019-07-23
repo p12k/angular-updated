@@ -1,0 +1,31 @@
+<h3>List of Indian Railway Trains and their Time Table</h3>
+<input [(ngModel)]="searchText" placeholder="Search.." class="advancedSearchTextbox">
+<p></p>
+<div class='table-responsive'>
+<table *ngFor="let emp of aboutData | aboutFilter: {trainnumber: searchText,trainname: searchText, rundays:searchText,  departure: searchText,arrival: searchText}; let i=index;" >
+  
+    <thead class="border">
+      <tr>
+          <th class="th-sm">S.No</th>
+        <th class="th-sm"> Tain Number
+  
+        </th>
+        <th class="th-sm">Train Name
+        </th>
+        <th class="th-sm">RunDays
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td   style="width: 10%;">{{i}}</td>
+            <td   style="width: 10%;">{{emp.trainnumber}}</td>
+            <td   style="width: 10%;">{{emp.trainname}}</td>
+            <td   style="width: 10%;">{{emp.rundays}}</td>
+         </tr>
+      
+    </tbody>
+    
+      </table>
+
+</div>

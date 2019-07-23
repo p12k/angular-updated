@@ -1,0 +1,34 @@
+.jsp {
+    width: 50%;
+    padding: 10px;
+    margin: none;
+    box-sizing: border-box;
+    background-color:white;
+    }
+  
+.form
+{
+ text-align: center;
+  border:71px white;
+  border-radius: 0px;
+  width:600px;
+  height: 400px;
+padding: 25px;
+background-color: lightgoldenrodyellow;
+margin-left: 50px;
+margin-bottom: 40px;
+
+}
+body{
+    
+    background-image: url(./../assets/images/oyo1.jpg);
+}
+#drop{
+
+    width: 50%;
+    padding: 10px;
+    margin: none;
+    box-sizing: border-box;
+    background-color:white;
+
+}
